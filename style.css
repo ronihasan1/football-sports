@@ -29,7 +29,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: var(--white2-color);
+    background: var(--white-color);
 }
 
 /* sheare styles */
@@ -274,7 +274,8 @@ footer {
 
 @media screen and (max-width:576px) {
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 0 20px;
     }
 
     main {
@@ -283,7 +284,7 @@ footer {
 
     /* header */
     .brand {
-        font-size: 1.25rem;
+        font-size: 1.875rem;
         margin: 10px 0;
     }
 
@@ -311,19 +312,21 @@ footer {
 
     /* banner */
     .banner-title {
-        font-size: 1.375rem;
+        font-size: 1.563rem;
     }
 
     .banner {
-        flex:0;
+        background: linear-gradient(#00000033, #00000033), url(./image/download.jpg);
+        background-position-x: center;
+        flex: 0;
         background-size: cover;
-        padding: 15px 8px;
         font-size: 14px;
         padding: 0;
     }
 
     .banner-left {
         padding: 10px;
+        text-align: center;
     }
 
     /* card */
@@ -345,6 +348,48 @@ footer {
 
 @media screen and (min-width:577px) and (max-width:992px) {
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .navbar,.banner ,.live-group-section ,.footer-menu{
+        flex-direction: column;
+    }
+    .display-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .banner{
+        width: 100%;
+        background-size: cover;
+        padding: 0;
+        margin: 0;
+    }
+    .left-site-group{
+        width: 100%;
+    }
+    .live-group-section ,.banner-right{
+        padding: 0;
+        margin: 0;
+    }
+     img{
+        width: 100%;
+    }
+
+    footer{
+        padding: 40px 0;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    .container{
+        width: 100%;
+    }
+    .display-grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
     }
 }
