@@ -195,10 +195,6 @@ footer {
     transition: 0.3s;
 }
 
-.left-site-group .btn:nth-child(1/2./3):hover {
-    background-color: var(--secondary-color);
-}
-
 /*  card*/
 .right-site-group {
     grid-template-columns: repeat(3, 1fr);
@@ -271,7 +267,7 @@ footer {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 600;
-    letter-spacing: 16;
+    letter-spacing: 1.6;
 }
 
 @media screen and (max-width:576px) {
