@@ -209,9 +209,11 @@ footer {
 .card {
     border: 1px solid var(--white3-color);
     background-color: var(--white-color);
+    border-radius: 10px;
 }
 
 .card img {
+    border-radius: 10px 10px 0 0;
     height: 160px;
     background-size: cover;
 }
@@ -351,45 +353,66 @@ footer {
         width: 100%;
         padding: 0 20px;
     }
-    .navbar,.banner ,.live-group-section ,.footer-menu{
+
+    .navbar,
+    .banner,
+    .live-group-section,
+    .footer-menu {
         flex-direction: column;
     }
-    .display-grid{
-        grid-template-columns: repeat(2,1fr);
+
+    .display-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .banner{
+
+    .banner {
         width: 100%;
         background-size: cover;
         padding: 0;
         margin: 0;
     }
-    .left-site-group{
+
+    .left-site-group {
         width: 100%;
+        flex-direction: row;
+        background: none;
     }
-    .live-group-section ,.banner-right{
+
+    .left-site-group .btn {
+        width: 100%;
+        color: var(--dark-color) !important;
+        border: 1px solid var(--primary-color);
+    }
+
+    .live-group-section,
+    .banner-right {
         padding: 0;
         margin: 0;
     }
-     img{
+
+    img {
         width: 100%;
     }
 
-    footer{
+    footer {
         padding: 40px 0;
     }
 }
+
 @media screen and (min-width:993px) and (max-width:1200px) {
-    .container{
+    .container {
         width: 100%;
     }
 }
+
 @media screen and (min-width:1201px) and (max-width:1400px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .display-grid{
-        grid-template-columns: repeat(3,1fr);
+
+    .display-grid {
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
